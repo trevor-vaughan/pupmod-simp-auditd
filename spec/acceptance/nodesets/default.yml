@@ -1,36 +1,19 @@
 HOSTS:
-  el7:
+  leap42:
     roles:
-      - default
-      - el7
-    platform:   el-7-x86_64
-    box:        centos/7
+      - client
+    platform: sles-12-x86_64
+    box: M0ses/openSUSE-Leap-42.1-minimal
     hypervisor: vagrant
-    yum_repos:
-      epel:
-        mirrorlist: 'https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch'
-        gpgkeys:
-          - https://getfedora.org/static/352C64E5.txt
+    repos:
       simp:
-        baseurl: https://dl.bintray.com/simp/5.1.X
-        gpgcheck: 0
-
-  el6:
-    roles:
-      - el6
-    platform:   el-6-x86_64
-    box:        centos/6
-    hypervisor: vagrant
-    yum_repos:
-      epel:
-        mirrorlist: 'https://mirrors.fedoraproject.org/metalink?repo=epel-6&arch=$basearch'
+        url: https://dl.bintray.com/simp/4.2.0-Beta2
         gpgkeys:
+          - https://raw.githubusercontent.com/NationalSecurityAgency/SIMP/master/GPGKEYS/RPM-GPG-KEY-SIMP
           - https://getfedora.org/static/0608B895.txt
-      simp:
-        baseurl: https://dl.bintray.com/simp/4.2.X
-        gpgcheck: 0
 
 CONFIG:
   log_level: verbose
-  type:      foss
+  synced_folder : disabled
+  type:      aio
   vagrant_memsize: 256

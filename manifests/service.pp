@@ -6,26 +6,26 @@
 class auditd::service {
   assert_private()
 
-  case $::operatingsystem {
-    'RedHat','CentOS' : {
-      # CCE-27058-7
-      service { $::auditd::service_name:
-        ensure     => 'running',
-        enable     => true,
-        hasrestart => true,
-        hasstatus  => true,
-        provider   => 'redhat'
-      }
+  if ($facts['operatingsystem'] in ['RedHat','CentOS']) or
+     ($facts['osfamily'] in ['Suse'])  {
 
-      # This is needed just in case the audit dispatcher fails at some point.
-      exec { 'Restart Audispd':
-        command => '/bin/true',
-        unless  => "/usr/bin/pgrep -f ${::auditd::dispatcher}",
-        notify  => Service[$::auditd::service_name]
-      }
+    # CCE-27058-7
+    service { $::auditd::service_name:
+      ensure     => 'running',
+      enable     => true,
+      hasrestart => true,
+      hasstatus  => true,
+      provider   => 'redhat'
     }
-    default : {
-      fail("Error: ${::operatingsystem} is not yet supported by module '${module_name}'")
+
+    # This is needed just in case the audit dispatcher fails at some point.
+    exec { 'Restart Audispd':
+      command => '/bin/true',
+      unless  => "/usr/bin/pgrep -f ${::auditd::dispatcher}",
+      notify  => Service[$::auditd::service_name]
     }
+  }
+  else {
+    fail("Error: ${::operatingsystem} is not yet supported by module '${module_name}'")
   }
 }
