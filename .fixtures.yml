@@ -16,3 +16,4 @@ fixtures:
     stdlib: https://github.com/simp/puppetlabs-stdlib
   symlinks:
     auditd: "#{source_dir}"
+    compliance_markup: "#{source_dir}/../compliance_markup"
