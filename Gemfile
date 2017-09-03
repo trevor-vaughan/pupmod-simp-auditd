@@ -11,7 +11,7 @@ group :test do
   gem 'rspec'
   gem 'rspec-puppet'
   gem 'hiera-puppet-helper'
-  gem 'puppetlabs_spec_helper'
+  gem 'puppetlabs_spec_helper', :git => 'https://github.com/trevor-vaughan/puppetlabs_spec_helper', :branch => 'MODULES-5503'
   gem 'metadata-json-lint'
   gem 'puppet-strings'
   gem 'puppet-lint-empty_string-check',   :require => false

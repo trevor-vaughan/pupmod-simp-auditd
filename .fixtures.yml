@@ -17,5 +17,11 @@ fixtures:
     simplib: https://github.com/simp/pupmod-simp-simplib
     simp_options: https://github.com/simp/pupmod-simp-simp_options
     stdlib: https://github.com/simp/puppetlabs-stdlib
+    # For InSpec Testing
+    inspec_profiles:
+      repo: https://github.com/trevor-vaughan/inspec_profiles
+      branch: refactor
+      target: spec/fixtures/inspec_deps
+
   symlinks:
     auditd: "#{source_dir}"

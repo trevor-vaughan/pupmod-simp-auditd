@@ -6,11 +6,12 @@ spec/fixtures/
 spec/rp_env/
 !/spec/hieradata/default.yaml
 !/spec/fixtures/site.pp
+.bundle/
 .rspec_system
 .vagrant/
-.bundle/
 Gemfile.lock
-vendor/
+doc/
 junit/
 log/
-doc/
+sec_results/
+vendor/

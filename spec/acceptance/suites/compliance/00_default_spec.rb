@@ -4,21 +4,7 @@ test_name 'auditd STIG enforcement'
 
 describe 'auditd STIG enforcement' do
 
-  def set_profile_data_on(host, profile_data)
-    hiera_yaml = <<-EOM
----
-:backends:
-  - yaml
-  - compliance_markup
-:yaml:
-  :datadir: "/etc/puppetlabs/code/environments/%{environment}/hieradata"
-:compliance_markup:
-  :datadir: "/etc/puppetlabs/code/environments/%{environment}/hieradata"
-:hierarchy:
-  - default
-:logger: console
-    EOM
-
+  def set_profile_data_on(host, hiera_yaml, profile_data)
     Dir.mktmpdir do |dir|
       tmp_yaml = File.join(dir, 'hiera.yaml')
       File.open(tmp_yaml, 'w') do |fh|
@@ -56,11 +42,26 @@ compliance_markup::enforcement:
   EOF
   }
 
+  let(:hiera_yaml) { <<-EOM
+---
+:backends:
+  - yaml
+  - simp_compliance_enforcement
+:yaml:
+  :datadir: "/etc/puppetlabs/code/environments/%{environment}/hieradata"
+:simp_compliance_enforcement:
+  :datadir: "/etc/puppetlabs/code/environments/%{environment}/hieradata"
+:hierarchy:
+  - default
+:logger: console
+    EOM
+  }
+
   hosts.each do |host|
     context 'when enforcing the STIG' do
       # Using puppet_apply as a helper
       it 'should work with no errors' do
-        set_profile_data_on(host, hieradata)
+        set_profile_data_on(host, hiera_yaml, hieradata)
         apply_manifest_on(host, manifest, :catch_failures => true)
       end
 
