@@ -19,8 +19,8 @@ fixtures:
     stdlib: https://github.com/simp/puppetlabs-stdlib
     # For InSpec Testing
     inspec_profiles:
-      #repo: https://github.com/trevor-vaughan/inspec_profiles
-      repo: file:///home/thanos/Work/SIMP/inspec_profiles
+      repo: https://github.com/trevor-vaughan/inspec_profiles
+      #repo: file:///home/thanos/Work/SIMP/inspec_profiles
       branch: refactor
       target: spec/fixtures/inspec_deps
 
