@@ -1,7 +1,6 @@
 ---
 compliance_markup::validate_profiles:
   - 'disa_stig'
-  - 'nist_800_53'
   - 'nist_800_53_rev4'
 
 # Needed for catalog inspection to ensure valid data
@@ -16,5 +15,4 @@ compliance_markup::report_types:
 # do something different based on your test requirements
 compliance_markup::enforcement:
   - 'disa_stig'
-  - 'nist_800_53'
   - 'nist_800_53_rev4'

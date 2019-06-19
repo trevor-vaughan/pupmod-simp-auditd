@@ -7,11 +7,11 @@ checks:
       value: 50
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-4: true
-      nist_800_53_rev4:AU-5:b: true
-      nist_800_53_rev4:AU-11: true
+      nist_800_53:rev4:AU-4: true
+      nist_800_53:rev4:AU-5:b: true
+      nist_800_53:rev4:AU-11: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-4
       - AU-5:b
       - AU-11
@@ -21,11 +21,11 @@ checks:
       value: SUSPEND
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-4: true
-      nist_800_53_rev4:AU-5:b: true
-      nist_800_53_rev4:AU-11: true
+      nist_800_53:rev4:AU-4: true
+      nist_800_53:rev4:AU-5:b: true
+      nist_800_53:rev4:AU-11: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-4
       - AU-5:b
       - AU-11
@@ -37,12 +37,12 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-14:1: true
-      nist_800_53_rev4:AU-1:b: true
-      nist_800_53_rev4:AU-2:a: true
-      nist_800_53_rev4:AU-2:c: true
-      nist_800_53_rev4:AU-2:d: true
-      nist_800_53_rev4:AU-10: true
+      nist_800_53:rev4:AU-14:1: true
+      nist_800_53:rev4:AU-1:b: true
+      nist_800_53:rev4:AU-2:a: true
+      nist_800_53:rev4:AU-2:c: true
+      nist_800_53:rev4:AU-2:d: true
+      nist_800_53:rev4:AU-10: true
       disa_stig: true
       RHEL-07-030310: true
       RHEL-07-030020: true
@@ -51,7 +51,7 @@ checks:
       cci:CCI-002234: true
       cci:CCI-000135: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-14:1
       - AU-1:b
       - AU-2:a
@@ -73,9 +73,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
     oval-ids:
     - xccdf_org:ssgproject:content_rule_audit_rules_dac_modification_fremovexattr
@@ -96,9 +96,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_cfg_pam:
     settings:
@@ -106,9 +106,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_cfg_security:
     settings:
@@ -116,9 +116,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_cfg_services:
     settings:
@@ -126,9 +126,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_cfg_shell:
     settings:
@@ -136,9 +136,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_cfg_sys:
     settings:
@@ -146,9 +146,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_cfg_xinetd:
     settings:
@@ -156,9 +156,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_chmod:
     settings:
@@ -166,9 +166,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
     oval-ids:
     - xccdf_org:ssgproject:content_rule_audit_rules_dac_modification_chmod
@@ -183,9 +183,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
     oval-ids:
     - xccdf_org:ssgproject:content_rule_audit_rules_dac_modification_chown
@@ -202,9 +202,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_kernel_modules:
     settings:
@@ -212,9 +212,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_local_account:
     settings:
@@ -222,9 +222,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_locale:
     settings:
@@ -232,9 +232,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_login_files:
     settings:
@@ -242,9 +242,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_mount:
     settings:
@@ -252,9 +252,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_personality:
     settings:
@@ -262,9 +262,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_ptrace:
     settings:
@@ -272,9 +272,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_selinux_policy:
     settings:
@@ -282,9 +282,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_session_files:
     settings:
@@ -292,9 +292,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_su_root_activity:
     settings:
@@ -302,9 +302,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_sudoers:
     settings:
@@ -312,9 +312,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_suid_sgid:
     settings:
@@ -322,9 +322,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_time:
     settings:
@@ -332,9 +332,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_umask:
     settings:
@@ -342,9 +342,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_unsuccessful_file_operations:
     settings:
@@ -352,9 +352,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.audit_yum:
     settings:
@@ -362,9 +362,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.ignore_anonymous:
     settings:
@@ -372,9 +372,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.ignore_errors:
     settings:
@@ -382,9 +382,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.config.audit_profiles.simp.ignore_system_services:
     settings:
@@ -392,9 +392,9 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2: true
+      nist_800_53:rev4:AU-2: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2
   oval:com.puppet.forge.simp.auditd.disk_error_action:
     settings:
@@ -402,11 +402,11 @@ checks:
       value: SUSPEND
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-4: true
-      nist_800_53_rev4:AU-5:b: true
-      nist_800_53_rev4:AU-11: true
+      nist_800_53:rev4:AU-4: true
+      nist_800_53:rev4:AU-5:b: true
+      nist_800_53:rev4:AU-11: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-4
       - AU-5:b
       - AU-11
@@ -416,15 +416,15 @@ checks:
       value: SUSPEND
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-4: true
-      nist_800_53_rev4:AU-5:b: true
-      nist_800_53_rev4:AU-11: true
+      nist_800_53:rev4:AU-4: true
+      nist_800_53:rev4:AU-5:b: true
+      nist_800_53:rev4:AU-11: true
       disa_stig: true
       RHEL-07-030340: true
       SRG-OS-000342-GPOS-00133: true
       cci:CCI-001851: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-4
       - AU-5:b
       - AU-11
@@ -438,11 +438,11 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-8:b: true
-      nist_800_53_rev4:AU-12:a: true
-      nist_800_53_rev4:AU-12:b: true
-      nist_800_53_rev4:AU-12:c: true
-      nist_800_53_rev4:AU-12:2: true
+      nist_800_53:rev4:AU-8:b: true
+      nist_800_53:rev4:AU-12:a: true
+      nist_800_53:rev4:AU-12:b: true
+      nist_800_53:rev4:AU-12:c: true
+      nist_800_53:rev4:AU-12:2: true
       disa_stig: true
       RHEL-07-030000: true
       SRG-OS-000038-GPOS-00016: true
@@ -452,7 +452,7 @@ checks:
       SRG-OS-000255-GPOS-00096: true
       cci:CCI-000126: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-8:b
       - AU-12:a
       - AU-12:b
@@ -474,14 +474,14 @@ checks:
       value: 2
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-5:b: true
+      nist_800_53:rev4:AU-5:b: true
       disa_stig: true
       RHEL-07-030010: true
       SRG-OS-000046-GPOS-00022: true
       SRG-OS-000047-GPOS-00023: true
       'CCI: CCI-000139': true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-5:b
       disa_stig:
       - RHEL-07-030010
@@ -494,10 +494,10 @@ checks:
       value: 24
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-4: true
-      nist_800_53_rev4:AU-11: true
+      nist_800_53:rev4:AU-4: true
+      nist_800_53:rev4:AU-11: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-4
       - AU-11
     oval-ids:
@@ -508,10 +508,10 @@ checks:
       value: 5
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-4: true
-      nist_800_53_rev4:AU-11: true
+      nist_800_53:rev4:AU-4: true
+      nist_800_53:rev4:AU-11: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-4
       - AU-11
     oval-ids:
@@ -522,18 +522,18 @@ checks:
       value: audit
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-3: true
-      nist_800_53_rev4:AU-8:b: true
-      nist_800_53_rev4:AU-12:a: true
-      nist_800_53_rev4:AU-12:b: true
-      nist_800_53_rev4:AU-12:c: true
-      nist_800_53_rev4:AU-12:2: true
+      nist_800_53:rev4:AU-3: true
+      nist_800_53:rev4:AU-8:b: true
+      nist_800_53:rev4:AU-12:a: true
+      nist_800_53:rev4:AU-12:b: true
+      nist_800_53:rev4:AU-12:c: true
+      nist_800_53:rev4:AU-12:2: true
       disa_stig: true
       RHEL-07-030200: true
       SRG-OS-000205-GPOS-00083: true
       cci:CCI-001312: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-3
       - AU-8:b
       - AU-12:a
@@ -550,14 +550,14 @@ checks:
       value: basic
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AC-6:9: true
-      nist_800_53_rev4:AU-2:a: true
-      nist_800_53_rev4:AU-2:b: true
-      nist_800_53_rev4:AU-2:c: true
-      nist_800_53_rev4:AU-2:d: true
-      nist_800_53_rev4:AU-2:4: true
-      nist_800_53_rev4:AU-12:a: true
-      nist_800_53_rev4:AU-12:c: true
+      nist_800_53:rev4:AC-6:9: true
+      nist_800_53:rev4:AU-2:a: true
+      nist_800_53:rev4:AU-2:b: true
+      nist_800_53:rev4:AU-2:c: true
+      nist_800_53:rev4:AU-2:d: true
+      nist_800_53:rev4:AU-2:4: true
+      nist_800_53:rev4:AU-12:a: true
+      nist_800_53:rev4:AU-12:c: true
       disa_stig: true
       RHEL-07-030310: true
       RHEL-07-030020: true
@@ -566,7 +566,7 @@ checks:
       cci:CCI-002234: true
       cci:CCI-000135: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AC-6:9
       - AU-2:a
       - AU-2:b
@@ -588,11 +588,11 @@ checks:
       value: auditd
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-8:b: true
-      nist_800_53_rev4:AU-12:a: true
-      nist_800_53_rev4:AU-12:b: true
-      nist_800_53_rev4:AU-12:c: true
-      nist_800_53_rev4:AU-12:2: true
+      nist_800_53:rev4:AU-8:b: true
+      nist_800_53:rev4:AU-12:a: true
+      nist_800_53:rev4:AU-12:b: true
+      nist_800_53:rev4:AU-12:c: true
+      nist_800_53:rev4:AU-12:2: true
       disa_stig: true
       RHEL-07-030010: true
       SRG-OS-000038-GPOS-00016: true
@@ -601,7 +601,7 @@ checks:
       cci:CCI-000131: true
       cci:CCI-000126: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-8:b
       - AU-12:a
       - AU-12:b
@@ -620,15 +620,15 @@ checks:
       value: true
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-3:2: true
-      nist_800_53_rev4:AU-4:1: true
-      nist_800_53_rev4:AU-9: true
+      nist_800_53:rev4:AU-3:2: true
+      nist_800_53:rev4:AU-4:1: true
+      nist_800_53:rev4:AU-9: true
       disa_stig: true
       RHEL-07-030770: true
       SRG-OS-000480-GPOS-00227: true
       cci:CCI-000366: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-3:2
       - AU-4:1
       - AU-9
@@ -645,14 +645,14 @@ checks:
       value: simp
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2:a: true
-      nist_800_53_rev4:AU-2:c: true
-      nist_800_53_rev4:AU-2:d: true
-      nist_800_53_rev4:AC-6:9: true
-      nist_800_53_rev4:AU-12:a: true
-      nist_800_53_rev4:AU-12:c: true
+      nist_800_53:rev4:AU-2:a: true
+      nist_800_53:rev4:AU-2:c: true
+      nist_800_53:rev4:AU-2:d: true
+      nist_800_53:rev4:AC-6:9: true
+      nist_800_53:rev4:AU-12:a: true
+      nist_800_53:rev4:AU-12:c: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2:a
       - AU-2:c
       - AU-2:d
@@ -668,11 +668,11 @@ checks:
       value: SYSLOG
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-4: true
-      nist_800_53_rev4:AU-5:a: true
-      nist_800_53_rev4:AU-11: true
+      nist_800_53:rev4:AU-4: true
+      nist_800_53:rev4:AU-5:a: true
+      nist_800_53:rev4:AU-11: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-4
       - AU-5:a
       - AU-11
@@ -1837,20 +1837,20 @@ checks:
       operatingsystemmajrelease: '7'
     oval-ids:
     - auditd_data_retention_space_left_action
-  oval:com.puppet.forge.simp.auditd.default_audit_profile.nist_800_53_rev4:
+  oval:com.puppet.forge.simp.auditd.default_audit_profile.nist_800_53:rev4:
     settings:
       parameter: auditd::default_audit_profile
       value: simp
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-2:a: true
-      nist_800_53_rev4:AU-2:c: true
-      nist_800_53_rev4:AU-2:d: true
-      nist_800_53_rev4:AC-6:9: true
-      nist_800_53_rev4:AU-12:a: true
-      nist_800_53_rev4:AU-12:c: true
+      nist_800_53:rev4:AU-2:a: true
+      nist_800_53:rev4:AU-2:c: true
+      nist_800_53:rev4:AU-2:d: true
+      nist_800_53:rev4:AC-6:9: true
+      nist_800_53:rev4:AU-12:a: true
+      nist_800_53:rev4:AU-12:c: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-2:a
       - AU-2:c
       - AU-2:d
@@ -1860,17 +1860,17 @@ checks:
     confine:
       osfamily: RedHat
       operatingsystemmajrelease: '7'
-  oval:com.puppet.forge.simp.auditd.space_left_action.nist_800_53_rev4:
+  oval:com.puppet.forge.simp.auditd.space_left_action.nist_800_53:rev4:
     settings:
       parameter: auditd::space_left_action
       value: SYSLOG
     type: puppet-class-parameter
     controls:
-      nist_800_53_rev4:AU-4: true
-      nist_800_53_rev4:AU-5:a: true
-      nist_800_53_rev4:AU-11: true
+      nist_800_53:rev4:AU-4: true
+      nist_800_53:rev4:AU-5:a: true
+      nist_800_53:rev4:AU-11: true
     identifiers:
-      nist_800_53_rev4:
+      nist_800_53:rev4:
       - AU-4
       - AU-5:a
       - AU-11
