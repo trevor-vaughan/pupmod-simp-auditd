@@ -1,3 +1,6 @@
+* Thu Nov 05 2020 Trevor Vaughan <tvaughan@onyxpoint.com> - 8.6.2-0
+- Add support for Amazon Linux
+
 * Wed Sep 23 2020 Trevor Vaughan <tvaughan@onyxpoint.com> - 8.6.1-0
 - Allow auditd space_left and admin_space_left to accept percentages on
   supported versions
